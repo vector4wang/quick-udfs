@@ -35,6 +35,8 @@ public class MapUdfSample extends GenericUDF {
 	}
 
 	public Object evaluate(DeferredObject[] arguments) throws HiveException {
+		resultMap.clear(); // 重要
+
 		Object key1 = arguments[0].get();
 		Object key2 = arguments[1].get();
 		Object key3 = arguments[2].get();
