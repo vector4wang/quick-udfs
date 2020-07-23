@@ -1,4 +1,4 @@
-package com.quick.udf;
+package com.quick.map.udf;
 
 import org.apache.hadoop.hive.ql.exec.UDFArgumentException;
 import org.apache.hadoop.hive.ql.metadata.HiveException;

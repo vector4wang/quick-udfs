@@ -1,11 +1,11 @@
 package com.quick.udf;
 
+import com.quick.map.udf.MapUdfSample;
 import org.apache.hadoop.hive.ql.metadata.HiveException;
 import org.apache.hadoop.hive.ql.udf.generic.GenericUDF;
 import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector;
 import org.apache.hadoop.hive.serde2.objectinspector.StandardMapObjectInspector;
 import org.apache.hadoop.hive.serde2.objectinspector.primitive.PrimitiveObjectInspectorFactory;
-import org.apache.hadoop.io.Text;
 import org.junit.Test;
 
 /**
@@ -15,12 +15,6 @@ import org.junit.Test;
  *
  */
 public class TestUdf {
-
-	@Test
-	public void testUDF() {
-		SampleUdf example = new SampleUdf();
-		System.out.println(example.evaluate(new Text("world")).toString());
-	}
 
 	@Test
 	public void testMapUdfSample() throws HiveException {
